@@ -1,0 +1,23 @@
+{
+  "name": "JavaScript & Node.js",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-node-debug2"
+      ],
+      "settings": {}
+    }
+  },
+
+  "postCreateCommand": "npm install",
+  
+  "remoteUser": "node"
+}
